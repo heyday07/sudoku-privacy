@@ -135,12 +135,12 @@
     <!-- ==================== 한국어 ==================== -->
     <div id="section-ko" class="section-ko">
       <h1>개인정보처리방침</h1>
-      <p class="subtitle">Daily Sudoku (매일매일 스도쿠) | 시행일: 2026년 5월 29일 | 버전 1.0</p>
+      <p class="subtitle">Daily Sudoku (매일매일 스도쿠) | 시행일: 2026년 8월 12일 | 버전 1.1 (Firebase Analytics 추가)</p>
 
       <p>RedMoon Studio(이하 "회사")는 「개인정보 보호법」 등 관련 법령에 따라 이용자의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리하기 위하여 다음과 같이 개인정보처리방침을 수립·공개합니다.</p>
 
       <div class="info-box">
-        <strong>한 줄 요약:</strong> Daily Sudoku는 회원가입이 없으며, 회사가 직접 수집하는 개인정보는 없습니다. 다만 앱을 무료로 제공하기 위해 <strong>Google AdMob(광고)</strong>과 <strong>Firebase Crashlytics(오류 진단)</strong>를 사용하며, 이 서비스들은 광고 식별자와 기기·진단 정보를 수집할 수 있습니다. 게임 기록과 설정은 사용자의 기기에만 저장됩니다.
+        <strong>한 줄 요약:</strong> Daily Sudoku는 회원가입이 없으며, 회사가 직접 수집하는 개인정보는 없습니다. 다만 앱을 무료로 제공하기 위해 <strong>Google AdMob(광고)</strong>, <strong>Firebase Crashlytics(오류 진단)</strong>, <strong>Firebase Analytics(익명 이용 통계)</strong>를 사용하며, 이 서비스들은 광고 식별자와 기기·진단·이용 정보를 수집할 수 있습니다. 게임 기록과 설정은 사용자의 기기에만 저장됩니다.
       </div>
 
       <h2>제1조 (수집하는 정보)</h2>
@@ -169,6 +169,7 @@
         <tbody>
           <tr><td>Google AdMob</td><td>광고 식별자(AAID), IP 주소, 기기 정보, 광고 상호작용 데이터</td><td>광고 게재 및 측정</td></tr>
           <tr><td>Firebase Crashlytics (Google)</td><td>충돌 로그, 스택 트레이스, 기기 상태, 앱 버전, 익명 설치 식별자</td><td>앱 안정성 개선</td></tr>
+          <tr><td>Firebase Analytics (Google)</td><td>앱 사용 이벤트(화면 조회, 게임 진행 등), 기기 정보, 익명 식별자</td><td>서비스 이용 통계 분석 및 개선</td></tr>
         </tbody>
       </table>
 
@@ -195,7 +196,7 @@
       <ul>
         <li>Google AdMob — <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
         <li>Google 광고(맞춤설정 관리) — <a href="https://policies.google.com/technologies/ads" target="_blank">policies.google.com/technologies/ads</a></li>
-        <li>Firebase Crashlytics — <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
+        <li>Firebase Crashlytics · Analytics — <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
       </ul>
 
       <h2>제5조 (광고 및 사용자 동의 — GDPR/UMP)</h2>
@@ -207,7 +208,7 @@
       <h2>제6조 (개인정보의 보유 및 파기)</h2>
       <ul>
         <li><strong>기기 내 데이터:</strong> 앱을 삭제하면 모든 게임 기록과 설정이 즉시 영구 삭제됩니다. 앱 내 설정에서 통계를 초기화할 수도 있습니다.</li>
-        <li><strong>AdMob/Crashlytics 데이터:</strong> Google의 데이터 보관 정책에 따라 처리·보관됩니다.</li>
+        <li><strong>AdMob/Firebase(Crashlytics·Analytics) 데이터:</strong> Google의 데이터 보관 정책에 따라 처리·보관됩니다.</li>
       </ul>
 
       <h2>제7조 (아동의 개인정보 보호)</h2>
@@ -241,12 +242,12 @@
     <!-- ==================== English ==================== -->
     <div id="section-en" class="section-en">
       <h1>Privacy Policy</h1>
-      <p class="subtitle">Daily Sudoku | Effective Date: May 29, 2026 | Version 1.0</p>
+      <p class="subtitle">Daily Sudoku | Effective Date: August 12, 2026 | Version 1.1 (Firebase Analytics added)</p>
 
       <p>RedMoon Studio ("Company", "we", "us") operates the Daily Sudoku mobile application. This Privacy Policy explains how information is handled when you use our app.</p>
 
       <div class="info-box">
-        <strong>One-line Summary:</strong> Daily Sudoku requires no account and we do not directly collect personal information. However, to provide the app for free we use <strong>Google AdMob (ads)</strong> and <strong>Firebase Crashlytics (crash diagnostics)</strong>, which may collect advertising identifiers and device/diagnostic information. Your game data and settings are stored only on your device.
+        <strong>One-line Summary:</strong> Daily Sudoku requires no account and we do not directly collect personal information. However, to provide the app for free we use <strong>Google AdMob (ads)</strong>, <strong>Firebase Crashlytics (crash diagnostics)</strong>, and <strong>Firebase Analytics (anonymous usage statistics)</strong>, which may collect advertising identifiers and device/diagnostic/usage information. Your game data and settings are stored only on your device.
       </div>
 
       <h2>1. Information Collected</h2>
@@ -275,6 +276,7 @@
         <tbody>
           <tr><td>Google AdMob</td><td>Advertising ID (AAID), IP address, device info, ad interaction data</td><td>Ad serving and measurement</td></tr>
           <tr><td>Firebase Crashlytics (Google)</td><td>Crash logs, stack traces, device state, app version, anonymous installation ID</td><td>App stability improvement</td></tr>
+          <tr><td>Firebase Analytics (Google)</td><td>App usage events (screen views, game progress, etc.), device info, anonymous identifiers</td><td>Usage statistics and service improvement</td></tr>
         </tbody>
       </table>
 
@@ -301,7 +303,7 @@
       <ul>
         <li>Google AdMob — <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
         <li>Google Ads (manage personalization) — <a href="https://policies.google.com/technologies/ads" target="_blank">policies.google.com/technologies/ads</a></li>
-        <li>Firebase Crashlytics — <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
+        <li>Firebase Crashlytics · Analytics — <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
       </ul>
 
       <h2>5. Advertising & Consent (GDPR/UMP)</h2>
@@ -313,7 +315,7 @@
       <h2>6. Data Retention and Deletion</h2>
       <ul>
         <li><strong>On-device data:</strong> Uninstalling the app immediately and permanently deletes all game data and settings. You can also reset statistics within the app settings.</li>
-        <li><strong>AdMob/Crashlytics data:</strong> Processed and retained according to Google's data retention policies.</li>
+        <li><strong>AdMob/Firebase (Crashlytics · Analytics) data:</strong> Processed and retained according to Google's data retention policies.</li>
       </ul>
 
       <h2>7. Children's Privacy</h2>
@@ -340,12 +342,12 @@
     <!-- ==================== 日本語 ==================== -->
     <div id="section-ja" class="section-ja">
       <h1>プライバシーポリシー</h1>
-      <p class="subtitle">Daily Sudoku (毎日ナンプレ) | 施行日: 2026年5月29日 | バージョン 1.0</p>
+      <p class="subtitle">Daily Sudoku (毎日ナンプレ) | 施行日: 2026年8月12日 | バージョン 1.1 (Firebase Analytics 追加)</p>
 
       <p>RedMoon Studio(以下「当社」)は、Daily Sudokuモバイルアプリケーションを運営しています。本プライバシーポリシーは、本アプリご利用時の情報の取り扱いについて説明します。</p>
 
       <div class="info-box">
-        <strong>要約:</strong> Daily Sudokuは会員登録が不要で、当社が直接収集する個人情報はありません。ただし、アプリを無料で提供するために<strong>Google AdMob(広告)</strong>と<strong>Firebase Crashlytics(クラッシュ診断)</strong>を使用しており、これらのサービスは広告識別子や端末・診断情報を収集する場合があります。ゲームデータと設定はユーザーの端末にのみ保存されます。
+        <strong>要約:</strong> Daily Sudokuは会員登録が不要で、当社が直接収集する個人情報はありません。ただし、アプリを無料で提供するために<strong>Google AdMob(広告)</strong>、<strong>Firebase Crashlytics(クラッシュ診断)</strong>、<strong>Firebase Analytics(匿名利用統計)</strong>を使用しており、これらのサービスは広告識別子や端末・診断・利用情報を収集する場合があります。ゲームデータと設定はユーザーの端末にのみ保存されます。
       </div>
 
       <h2>第1条 (収集する情報)</h2>
@@ -374,6 +376,7 @@
         <tbody>
           <tr><td>Google AdMob</td><td>広告識別子(AAID)、IPアドレス、端末情報、広告インタラクションデータ</td><td>広告配信および測定</td></tr>
           <tr><td>Firebase Crashlytics (Google)</td><td>クラッシュログ、スタックトレース、端末状態、アプリバージョン、匿名インストール識別子</td><td>アプリ安定性の改善</td></tr>
+          <tr><td>Firebase Analytics (Google)</td><td>アプリ利用イベント(画面表示、ゲーム進行など)、端末情報、匿名識別子</td><td>利用統計の分析とサービス改善</td></tr>
         </tbody>
       </table>
 
@@ -400,7 +403,7 @@
       <ul>
         <li>Google AdMob — <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
         <li>Google 広告(パーソナライズ管理) — <a href="https://policies.google.com/technologies/ads" target="_blank">policies.google.com/technologies/ads</a></li>
-        <li>Firebase Crashlytics — <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
+        <li>Firebase Crashlytics · Analytics — <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
       </ul>
 
       <h2>第5条 (広告とユーザー同意 — GDPR/UMP)</h2>
@@ -412,7 +415,7 @@
       <h2>第6条 (個人情報の保有及び破棄)</h2>
       <ul>
         <li><strong>端末内データ:</strong> アプリをアンインストールすると、すべてのゲームデータと設定が即座に永久削除されます。アプリ内の設定から統計を初期化することもできます。</li>
-        <li><strong>AdMob/Crashlyticsデータ:</strong> Googleのデータ保管ポリシーに従って処理・保管されます。</li>
+        <li><strong>AdMob/Firebase(Crashlytics・Analytics)データ:</strong> Googleのデータ保管ポリシーに従って処理・保管されます。</li>
       </ul>
 
       <h2>第7条 (児童のプライバシー保護)</h2>
@@ -439,12 +442,12 @@
     <!-- ==================== Español ==================== -->
     <div id="section-es" class="section-es">
       <h1>Política de Privacidad</h1>
-      <p class="subtitle">Daily Sudoku (Sudoku Diario) | Fecha de entrada en vigor: 29 de mayo de 2026 | Versión 1.0</p>
+      <p class="subtitle">Daily Sudoku (Sudoku Diario) | Fecha de entrada en vigor: 12 de agosto de 2026 | Versión 1.1 (Firebase Analytics añadido)</p>
 
       <p>RedMoon Studio ("la Empresa", "nosotros") opera la aplicación móvil Daily Sudoku. Esta Política de Privacidad explica cómo se maneja la información cuando utiliza nuestra aplicación.</p>
 
       <div class="info-box">
-        <strong>Resumen:</strong> Daily Sudoku no requiere registro y no recopilamos directamente información personal. Sin embargo, para ofrecer la aplicación de forma gratuita usamos <strong>Google AdMob (anuncios)</strong> y <strong>Firebase Crashlytics (diagnóstico de fallos)</strong>, que pueden recopilar identificadores publicitarios e información del dispositivo/diagnóstico. Sus datos de juego y ajustes se almacenan solo en su dispositivo.
+        <strong>Resumen:</strong> Daily Sudoku no requiere registro y no recopilamos directamente información personal. Sin embargo, para ofrecer la aplicación de forma gratuita usamos <strong>Google AdMob (anuncios)</strong>, <strong>Firebase Crashlytics (diagnóstico de fallos)</strong> y <strong>Firebase Analytics (estadísticas de uso anónimas)</strong>, que pueden recopilar identificadores publicitarios e información del dispositivo/diagnóstico/uso. Sus datos de juego y ajustes se almacenan solo en su dispositivo.
       </div>
 
       <h2>1. Información Recopilada</h2>
@@ -473,6 +476,7 @@
         <tbody>
           <tr><td>Google AdMob</td><td>ID de publicidad (AAID), dirección IP, información del dispositivo, datos de interacción con anuncios</td><td>Publicación y medición de anuncios</td></tr>
           <tr><td>Firebase Crashlytics (Google)</td><td>Registros de fallos, trazas de pila, estado del dispositivo, versión de la app, ID de instalación anónimo</td><td>Mejora de la estabilidad de la app</td></tr>
+          <tr><td>Firebase Analytics (Google)</td><td>Eventos de uso (vistas de pantalla, progreso del juego, etc.), información del dispositivo, identificadores anónimos</td><td>Estadísticas de uso y mejora del servicio</td></tr>
         </tbody>
       </table>
 
@@ -499,7 +503,7 @@
       <ul>
         <li>Google AdMob — <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
         <li>Google Ads (gestionar personalización) — <a href="https://policies.google.com/technologies/ads" target="_blank">policies.google.com/technologies/ads</a></li>
-        <li>Firebase Crashlytics — <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
+        <li>Firebase Crashlytics · Analytics — <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
       </ul>
 
       <h2>5. Publicidad y Consentimiento (RGPD/UMP)</h2>
@@ -511,7 +515,7 @@
       <h2>6. Conservación y Eliminación de Datos</h2>
       <ul>
         <li><strong>Datos en el dispositivo:</strong> Al desinstalar la app se eliminan inmediata y permanentemente todos los datos de juego y ajustes. También puede restablecer las estadísticas dentro de los ajustes de la app.</li>
-        <li><strong>Datos de AdMob/Crashlytics:</strong> Se procesan y conservan según las políticas de retención de datos de Google.</li>
+        <li><strong>Datos de AdMob/Firebase (Crashlytics · Analytics):</strong> Se procesan y conservan según las políticas de retención de datos de Google.</li>
       </ul>
 
       <h2>7. Privacidad de los Menores</h2>
@@ -538,12 +542,12 @@
     <!-- ==================== 简体中文 ==================== -->
     <div id="section-zhhans" class="section-zhhans">
       <h1>隐私政策</h1>
-      <p class="subtitle">Daily Sudoku (天天数独) | 生效日期: 2026年5月29日 | 版本 1.0</p>
+      <p class="subtitle">Daily Sudoku (天天数独) | 生效日期: 2026年8月12日 | 版本 1.1 (新增 Firebase Analytics)</p>
 
       <p>RedMoon Studio(以下简称"本公司")运营 Daily Sudoku 移动应用程序。本隐私政策说明您使用本应用时信息的处理方式。</p>
 
       <div class="info-box">
-        <strong>摘要:</strong> Daily Sudoku 无需注册账户，本公司不直接收集个人信息。但为免费提供本应用，我们使用 <strong>Google AdMob(广告)</strong> 和 <strong>Firebase Crashlytics(崩溃诊断)</strong>，这些服务可能会收集广告标识符和设备/诊断信息。您的游戏数据和设置仅存储在您的设备上。
+        <strong>摘要:</strong> Daily Sudoku 无需注册账户，本公司不直接收集个人信息。但为免费提供本应用，我们使用 <strong>Google AdMob(广告)</strong>、<strong>Firebase Crashlytics(崩溃诊断)</strong> 和 <strong>Firebase Analytics(匿名使用统计)</strong>，这些服务可能会收集广告标识符和设备/诊断/使用信息。您的游戏数据和设置仅存储在您的设备上。
       </div>
 
       <h2>第1条 (收集的信息)</h2>
@@ -572,6 +576,7 @@
         <tbody>
           <tr><td>Google AdMob</td><td>广告标识符(AAID)、IP地址、设备信息、广告互动数据</td><td>广告投放与衡量</td></tr>
           <tr><td>Firebase Crashlytics (Google)</td><td>崩溃日志、堆栈跟踪、设备状态、应用版本、匿名安装标识符</td><td>提升应用稳定性</td></tr>
+          <tr><td>Firebase Analytics (Google)</td><td>应用使用事件(页面浏览、游戏进度等)、设备信息、匿名标识符</td><td>使用统计分析与服务改进</td></tr>
         </tbody>
       </table>
 
@@ -598,7 +603,7 @@
       <ul>
         <li>Google AdMob — <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
         <li>Google 广告(管理个性化) — <a href="https://policies.google.com/technologies/ads" target="_blank">policies.google.com/technologies/ads</a></li>
-        <li>Firebase Crashlytics — <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
+        <li>Firebase Crashlytics · Analytics — <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
       </ul>
 
       <h2>第5条 (广告与用户同意 — GDPR/UMP)</h2>
@@ -610,7 +615,7 @@
       <h2>第6条 (数据保留与删除)</h2>
       <ul>
         <li><strong>设备内数据:</strong> 卸载应用将立即永久删除所有游戏数据和设置。您也可在应用设置中重置统计。</li>
-        <li><strong>AdMob/Crashlytics 数据:</strong> 按照 Google 的数据保留政策进行处理和保留。</li>
+        <li><strong>AdMob/Firebase(Crashlytics·Analytics) 数据:</strong> 按照 Google 的数据保留政策进行处理和保留。</li>
       </ul>
 
       <h2>第7条 (儿童隐私保护)</h2>
@@ -637,12 +642,12 @@
     <!-- ==================== 繁體中文 ==================== -->
     <div id="section-zhhant" class="section-zhhant">
       <h1>隱私政策</h1>
-      <p class="subtitle">Daily Sudoku (天天數獨) | 生效日期: 2026年5月29日 | 版本 1.0</p>
+      <p class="subtitle">Daily Sudoku (天天數獨) | 生效日期: 2026年8月12日 | 版本 1.1 (新增 Firebase Analytics)</p>
 
       <p>RedMoon Studio(以下簡稱「本公司」)營運 Daily Sudoku 行動應用程式。本隱私政策說明您使用本應用時資訊的處理方式。</p>
 
       <div class="info-box">
-        <strong>摘要:</strong> Daily Sudoku 無需註冊帳號，本公司不直接收集個人資訊。但為免費提供本應用，我們使用 <strong>Google AdMob(廣告)</strong> 與 <strong>Firebase Crashlytics(當機診斷)</strong>，這些服務可能會收集廣告識別碼及裝置/診斷資訊。您的遊戲資料與設定僅儲存在您的裝置上。
+        <strong>摘要:</strong> Daily Sudoku 無需註冊帳號，本公司不直接收集個人資訊。但為免費提供本應用，我們使用 <strong>Google AdMob(廣告)</strong>、<strong>Firebase Crashlytics(當機診斷)</strong> 與 <strong>Firebase Analytics(匿名使用統計)</strong>，這些服務可能會收集廣告識別碼及裝置/診斷/使用資訊。您的遊戲資料與設定僅儲存在您的裝置上。
       </div>
 
       <h2>第1條 (收集的資訊)</h2>
@@ -671,6 +676,7 @@
         <tbody>
           <tr><td>Google AdMob</td><td>廣告識別碼(AAID)、IP位址、裝置資訊、廣告互動資料</td><td>廣告投放與衡量</td></tr>
           <tr><td>Firebase Crashlytics (Google)</td><td>當機記錄、堆疊追蹤、裝置狀態、應用版本、匿名安裝識別碼</td><td>提升應用穩定性</td></tr>
+          <tr><td>Firebase Analytics (Google)</td><td>應用使用事件(頁面瀏覽、遊戲進度等)、裝置資訊、匿名識別碼</td><td>使用統計分析與服務改進</td></tr>
         </tbody>
       </table>
 
@@ -697,7 +703,7 @@
       <ul>
         <li>Google AdMob — <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
         <li>Google 廣告(管理個人化) — <a href="https://policies.google.com/technologies/ads" target="_blank">policies.google.com/technologies/ads</a></li>
-        <li>Firebase Crashlytics — <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
+        <li>Firebase Crashlytics · Analytics — <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
       </ul>
 
       <h2>第5條 (廣告與使用者同意 — GDPR/UMP)</h2>
@@ -709,7 +715,7 @@
       <h2>第6條 (資料保留與刪除)</h2>
       <ul>
         <li><strong>裝置內資料:</strong> 解除安裝應用將立即永久刪除所有遊戲資料與設定。您也可在應用設定中重設統計。</li>
-        <li><strong>AdMob/Crashlytics 資料:</strong> 依照 Google 的資料保留政策進行處理與保留。</li>
+        <li><strong>AdMob/Firebase(Crashlytics·Analytics) 資料:</strong> 依照 Google 的資料保留政策進行處理與保留。</li>
       </ul>
 
       <h2>第7條 (兒童隱私保護)</h2>
