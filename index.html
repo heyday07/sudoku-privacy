@@ -135,7 +135,7 @@
     <!-- ==================== 한국어 ==================== -->
     <div id="section-ko" class="section-ko">
       <h1>개인정보처리방침</h1>
-      <p class="subtitle">Daily Sudoku (매일매일 스도쿠) | 시행일: 2026년 8월 12일 | 버전 1.1 (Firebase Analytics 추가)</p>
+      <p class="subtitle">Daily Sudoku (매일매일 스도쿠) | 시행일: 2026년 10월 5일 | 버전 1.2 (iOS 출시, 알림·추적 권한 안내 추가)</p>
 
       <p>RedMoon Studio(이하 "회사")는 「개인정보 보호법」 등 관련 법령에 따라 이용자의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리하기 위하여 다음과 같이 개인정보처리방침을 수립·공개합니다.</p>
 
@@ -156,10 +156,10 @@
       <table>
         <thead><tr><th>항목</th><th>용도</th><th>저장 위치</th></tr></thead>
         <tbody>
-          <tr><td>게임 통계(완료 수, 시간, 스트릭)</td><td>플레이 기록 표시</td><td>SharedPreferences</td></tr>
-          <tr><td>진행 중인 게임</td><td>이어하기</td><td>SharedPreferences</td></tr>
-          <tr><td>힌트 잔액, 업적</td><td>게임 진행</td><td>SharedPreferences</td></tr>
-          <tr><td>설정(테마, 언어, 햅틱, 글꼴 크기)</td><td>앱 환경 설정</td><td>SharedPreferences</td></tr>
+          <tr><td>게임 통계(완료 수, 시간, 스트릭)</td><td>플레이 기록 표시</td><td>기기 내 앱 저장소</td></tr>
+          <tr><td>진행 중인 게임</td><td>이어하기</td><td>기기 내 앱 저장소</td></tr>
+          <tr><td>힌트 잔액, 업적</td><td>게임 진행</td><td>기기 내 앱 저장소</td></tr>
+          <tr><td>설정(테마, 언어, 햅틱, 글꼴 크기)</td><td>앱 환경 설정</td><td>기기 내 앱 저장소</td></tr>
         </tbody>
       </table>
 
@@ -167,7 +167,7 @@
       <table>
         <thead><tr><th>서비스</th><th>수집 정보</th><th>목적</th></tr></thead>
         <tbody>
-          <tr><td>Google AdMob</td><td>광고 식별자(AAID), IP 주소, 기기 정보, 광고 상호작용 데이터</td><td>광고 게재 및 측정</td></tr>
+          <tr><td>Google AdMob</td><td>광고 식별자(AAID / IDFA), IP 주소, 기기 정보, 광고 상호작용 데이터</td><td>광고 게재 및 측정</td></tr>
           <tr><td>Firebase Crashlytics (Google)</td><td>충돌 로그, 스택 트레이스, 기기 상태, 앱 버전, 익명 설치 식별자</td><td>앱 안정성 개선</td></tr>
           <tr><td>Firebase Analytics (Google)</td><td>앱 사용 이벤트(화면 조회, 게임 진행 등), 기기 정보, 익명 식별자</td><td>서비스 이용 통계 분석 및 개선</td></tr>
         </tbody>
@@ -180,6 +180,8 @@
           <tr><td>인터넷 (INTERNET)</td><td>광고 로드, 오류 보고서 전송</td></tr>
           <tr><td>네트워크 상태 (ACCESS_NETWORK_STATE)</td><td>광고 표시를 위한 연결 상태 확인</td></tr>
           <tr><td>광고 ID (com.google.android.gms.permission.AD_ID)</td><td>광고 식별자 접근(맞춤형 광고)</td></tr>
+          <tr><td>알림 (iOS 알림 권한 / Android POST_NOTIFICATIONS)</td><td>매일 리마인더 알림 표시 (기기 내 예약, 외부 전송 없음)</td></tr>
+          <tr><td>앱 추적 허용 (iOS ATT)</td><td>허용한 경우 광고 맞춤 및 광고 성과 측정 (광고 식별자 사용)</td></tr>
         </tbody>
       </table>
 
@@ -202,7 +204,8 @@
       <h2>제5조 (광고 및 사용자 동의 — GDPR/UMP)</h2>
       <ul>
         <li>유럽경제지역(EEA), 영국, 스위스 이용자에게는 앱 최초 실행 시 Google UMP(User Messaging Platform) 동의 양식이 표시되어, 맞춤형/비맞춤형 광고에 대한 동의를 선택할 수 있습니다.</li>
-        <li>맞춤형 광고를 원치 않으시면 <strong>기기 설정 &gt; Google &gt; 광고</strong>에서 "광고 맞춤설정 선택 해제"를 켜거나 광고 ID를 재설정/삭제할 수 있습니다.</li>
+        <li>맞춤형 광고를 원치 않으시면 <strong>[Android] 기기 설정 &gt; Google &gt; 광고 / [iOS] 설정 &gt; 개인정보 보호 및 보안 &gt; 추적</strong>에서 "광고 맞춤설정 선택 해제"를 켜거나 광고 ID를 재설정/삭제할 수 있습니다.</li>
+        <li>iOS에서는 앱 첫 실행 후 '추적 허용' 여부를 묻는 창이 표시됩니다. 허용하면 광고 식별자(IDFA)로 맞춤형 광고와 광고 성과 측정이 이루어지며, 허용하지 않으면 맞춤형 광고에 사용되지 않습니다. 설정 &gt; 개인정보 보호 및 보안 &gt; 추적에서 언제든지 변경할 수 있습니다.</li>
       </ul>
 
       <h2>제6조 (개인정보의 보유 및 파기)</h2>
@@ -242,7 +245,7 @@
     <!-- ==================== English ==================== -->
     <div id="section-en" class="section-en">
       <h1>Privacy Policy</h1>
-      <p class="subtitle">Daily Sudoku | Effective Date: August 12, 2026 | Version 1.1 (Firebase Analytics added)</p>
+      <p class="subtitle">Daily Sudoku | Effective Date: October 5, 2026 | Version 1.2 (iOS release, notification and tracking permissions added)</p>
 
       <p>RedMoon Studio ("Company", "we", "us") operates the Daily Sudoku mobile application. This Privacy Policy explains how information is handled when you use our app.</p>
 
@@ -263,10 +266,10 @@
       <table>
         <thead><tr><th>Data Type</th><th>Purpose</th><th>Storage</th></tr></thead>
         <tbody>
-          <tr><td>Game statistics (completions, time, streaks)</td><td>Display play history</td><td>SharedPreferences</td></tr>
-          <tr><td>In-progress game</td><td>Continue playing</td><td>SharedPreferences</td></tr>
-          <tr><td>Hint balance, achievements</td><td>Game progression</td><td>SharedPreferences</td></tr>
-          <tr><td>Settings (theme, language, haptics, font size)</td><td>App configuration</td><td>SharedPreferences</td></tr>
+          <tr><td>Game statistics (completions, time, streaks)</td><td>Display play history</td><td>On-device app storage</td></tr>
+          <tr><td>In-progress game</td><td>Continue playing</td><td>On-device app storage</td></tr>
+          <tr><td>Hint balance, achievements</td><td>Game progression</td><td>On-device app storage</td></tr>
+          <tr><td>Settings (theme, language, haptics, font size)</td><td>App configuration</td><td>On-device app storage</td></tr>
         </tbody>
       </table>
 
@@ -274,7 +277,7 @@
       <table>
         <thead><tr><th>Service</th><th>Data Collected</th><th>Purpose</th></tr></thead>
         <tbody>
-          <tr><td>Google AdMob</td><td>Advertising ID (AAID), IP address, device info, ad interaction data</td><td>Ad serving and measurement</td></tr>
+          <tr><td>Google AdMob</td><td>Advertising ID (AAID / IDFA), IP address, device info, ad interaction data</td><td>Ad serving and measurement</td></tr>
           <tr><td>Firebase Crashlytics (Google)</td><td>Crash logs, stack traces, device state, app version, anonymous installation ID</td><td>App stability improvement</td></tr>
           <tr><td>Firebase Analytics (Google)</td><td>App usage events (screen views, game progress, etc.), device info, anonymous identifiers</td><td>Usage statistics and service improvement</td></tr>
         </tbody>
@@ -287,6 +290,8 @@
           <tr><td>Internet (INTERNET)</td><td>Load ads, send crash reports</td></tr>
           <tr><td>Network State (ACCESS_NETWORK_STATE)</td><td>Check connectivity for ads</td></tr>
           <tr><td>Advertising ID (com.google.android.gms.permission.AD_ID)</td><td>Access advertising identifier (personalized ads)</td></tr>
+          <tr><td>Notifications (iOS notification permission / Android POST_NOTIFICATIONS)</td><td>Daily reminder alerts (scheduled on device; nothing sent to our servers)</td></tr>
+          <tr><td>App Tracking (iOS ATT)</td><td>Personalized ads and ad measurement if you allow tracking (uses advertising identifier)</td></tr>
         </tbody>
       </table>
 
@@ -309,7 +314,8 @@
       <h2>5. Advertising & Consent (GDPR/UMP)</h2>
       <ul>
         <li>Users in the European Economic Area (EEA), the UK, and Switzerland are shown a Google UMP (User Messaging Platform) consent form on first launch, where they can choose to consent to personalized or non-personalized ads.</li>
-        <li>To opt out of personalized ads, enable "Opt out of Ads Personalization" or reset/delete your Advertising ID under <strong>Device Settings &gt; Google &gt; Ads</strong>.</li>
+        <li>To opt out of personalized ads, enable "Opt out of Ads Personalization" or reset/delete your Advertising ID under <strong>[Android] Device Settings &gt; Google &gt; Ads / [iOS] Settings &gt; Privacy &amp; Security &gt; Tracking</strong>.</li>
+        <li>On iOS, you are asked whether to allow tracking after first launch. If you allow it, your advertising identifier (IDFA) is used for personalized ads and ad measurement; if you decline, it is not used for personalized ads. You can change this anytime under Settings &gt; Privacy &amp; Security &gt; Tracking.</li>
       </ul>
 
       <h2>6. Data Retention and Deletion</h2>
@@ -342,7 +348,7 @@
     <!-- ==================== 日本語 ==================== -->
     <div id="section-ja" class="section-ja">
       <h1>プライバシーポリシー</h1>
-      <p class="subtitle">Daily Sudoku (毎日ナンプレ) | 施行日: 2026年8月12日 | バージョン 1.1 (Firebase Analytics 追加)</p>
+      <p class="subtitle">Daily Sudoku (毎日ナンプレ) | 施行日: 2026年10月5日 | バージョン 1.2 (iOS版リリース、通知・トラッキング許可を追加)</p>
 
       <p>RedMoon Studio(以下「当社」)は、Daily Sudokuモバイルアプリケーションを運営しています。本プライバシーポリシーは、本アプリご利用時の情報の取り扱いについて説明します。</p>
 
@@ -363,10 +369,10 @@
       <table>
         <thead><tr><th>項目</th><th>用途</th><th>保存場所</th></tr></thead>
         <tbody>
-          <tr><td>ゲーム統計(完了数、時間、ストリーク)</td><td>プレイ記録の表示</td><td>SharedPreferences</td></tr>
-          <tr><td>進行中のゲーム</td><td>続きから再開</td><td>SharedPreferences</td></tr>
-          <tr><td>ヒント残高、実績</td><td>ゲーム進行</td><td>SharedPreferences</td></tr>
-          <tr><td>設定(テーマ、言語、触覚、文字サイズ)</td><td>アプリ環境設定</td><td>SharedPreferences</td></tr>
+          <tr><td>ゲーム統計(完了数、時間、ストリーク)</td><td>プレイ記録の表示</td><td>端末内アプリストレージ</td></tr>
+          <tr><td>進行中のゲーム</td><td>続きから再開</td><td>端末内アプリストレージ</td></tr>
+          <tr><td>ヒント残高、実績</td><td>ゲーム進行</td><td>端末内アプリストレージ</td></tr>
+          <tr><td>設定(テーマ、言語、触覚、文字サイズ)</td><td>アプリ環境設定</td><td>端末内アプリストレージ</td></tr>
         </tbody>
       </table>
 
@@ -374,7 +380,7 @@
       <table>
         <thead><tr><th>サービス</th><th>収集情報</th><th>目的</th></tr></thead>
         <tbody>
-          <tr><td>Google AdMob</td><td>広告識別子(AAID)、IPアドレス、端末情報、広告インタラクションデータ</td><td>広告配信および測定</td></tr>
+          <tr><td>Google AdMob</td><td>広告識別子(AAID / IDFA)、IPアドレス、端末情報、広告インタラクションデータ</td><td>広告配信および測定</td></tr>
           <tr><td>Firebase Crashlytics (Google)</td><td>クラッシュログ、スタックトレース、端末状態、アプリバージョン、匿名インストール識別子</td><td>アプリ安定性の改善</td></tr>
           <tr><td>Firebase Analytics (Google)</td><td>アプリ利用イベント(画面表示、ゲーム進行など)、端末情報、匿名識別子</td><td>利用統計の分析とサービス改善</td></tr>
         </tbody>
@@ -387,6 +393,8 @@
           <tr><td>インターネット (INTERNET)</td><td>広告の読み込み、クラッシュレポートの送信</td></tr>
           <tr><td>ネットワーク状態 (ACCESS_NETWORK_STATE)</td><td>広告表示のための接続状態確認</td></tr>
           <tr><td>広告ID (com.google.android.gms.permission.AD_ID)</td><td>広告識別子へのアクセス(パーソナライズ広告)</td></tr>
+          <tr><td>通知 (iOS通知許可 / Android POST_NOTIFICATIONS)</td><td>毎日のリマインダー通知(端末内で予約、外部送信なし)</td></tr>
+          <tr><td>アプリのトラッキング (iOS ATT)</td><td>許可した場合にパーソナライズ広告と広告効果測定(広告識別子を使用)</td></tr>
         </tbody>
       </table>
 
@@ -409,7 +417,8 @@
       <h2>第5条 (広告とユーザー同意 — GDPR/UMP)</h2>
       <ul>
         <li>欧州経済領域(EEA)、英国、スイスのユーザーには、アプリ初回起動時にGoogle UMP(User Messaging Platform)の同意フォームが表示され、パーソナライズ広告/非パーソナライズ広告への同意を選択できます。</li>
-        <li>パーソナライズ広告を希望されない場合は、<strong>端末の設定 &gt; Google &gt; 広告</strong>で「広告のパーソナライズをオプトアウト」を有効にするか、広告IDをリセット/削除できます。</li>
+        <li>パーソナライズ広告を希望されない場合は、<strong>[Android] 端末の設定 &gt; Google &gt; 広告 / [iOS] 設定 &gt; プライバシーとセキュリティ &gt; トラッキング</strong>で「広告のパーソナライズをオプトアウト」を有効にするか、広告IDをリセット/削除できます。</li>
+        <li>iOSでは、初回起動後にトラッキングの許可を求める画面が表示されます。許可した場合、広告識別子(IDFA)をパーソナライズ広告と広告効果測定に使用します。許可しない場合は使用しません。設定 &gt; プライバシーとセキュリティ &gt; トラッキングでいつでも変更できます。</li>
       </ul>
 
       <h2>第6条 (個人情報の保有及び破棄)</h2>
@@ -442,7 +451,7 @@
     <!-- ==================== Español ==================== -->
     <div id="section-es" class="section-es">
       <h1>Política de Privacidad</h1>
-      <p class="subtitle">Daily Sudoku (Sudoku Diario) | Fecha de entrada en vigor: 12 de agosto de 2026 | Versión 1.1 (Firebase Analytics añadido)</p>
+      <p class="subtitle">Daily Sudoku (Sudoku Diario) | Fecha de entrada en vigor: 5 de octubre de 2026 | Versión 1.2 (lanzamiento en iOS, permisos de notificación y seguimiento añadidos)</p>
 
       <p>RedMoon Studio ("la Empresa", "nosotros") opera la aplicación móvil Daily Sudoku. Esta Política de Privacidad explica cómo se maneja la información cuando utiliza nuestra aplicación.</p>
 
@@ -463,10 +472,10 @@
       <table>
         <thead><tr><th>Tipo de dato</th><th>Finalidad</th><th>Almacenamiento</th></tr></thead>
         <tbody>
-          <tr><td>Estadísticas de juego (completados, tiempo, rachas)</td><td>Mostrar historial de juego</td><td>SharedPreferences</td></tr>
-          <tr><td>Partida en curso</td><td>Continuar jugando</td><td>SharedPreferences</td></tr>
-          <tr><td>Saldo de pistas, logros</td><td>Progreso del juego</td><td>SharedPreferences</td></tr>
-          <tr><td>Ajustes (tema, idioma, vibración, tamaño de fuente)</td><td>Configuración de la app</td><td>SharedPreferences</td></tr>
+          <tr><td>Estadísticas de juego (completados, tiempo, rachas)</td><td>Mostrar historial de juego</td><td>Almacenamiento interno de la app</td></tr>
+          <tr><td>Partida en curso</td><td>Continuar jugando</td><td>Almacenamiento interno de la app</td></tr>
+          <tr><td>Saldo de pistas, logros</td><td>Progreso del juego</td><td>Almacenamiento interno de la app</td></tr>
+          <tr><td>Ajustes (tema, idioma, vibración, tamaño de fuente)</td><td>Configuración de la app</td><td>Almacenamiento interno de la app</td></tr>
         </tbody>
       </table>
 
@@ -474,7 +483,7 @@
       <table>
         <thead><tr><th>Servicio</th><th>Datos recopilados</th><th>Finalidad</th></tr></thead>
         <tbody>
-          <tr><td>Google AdMob</td><td>ID de publicidad (AAID), dirección IP, información del dispositivo, datos de interacción con anuncios</td><td>Publicación y medición de anuncios</td></tr>
+          <tr><td>Google AdMob</td><td>ID de publicidad (AAID / IDFA), dirección IP, información del dispositivo, datos de interacción con anuncios</td><td>Publicación y medición de anuncios</td></tr>
           <tr><td>Firebase Crashlytics (Google)</td><td>Registros de fallos, trazas de pila, estado del dispositivo, versión de la app, ID de instalación anónimo</td><td>Mejora de la estabilidad de la app</td></tr>
           <tr><td>Firebase Analytics (Google)</td><td>Eventos de uso (vistas de pantalla, progreso del juego, etc.), información del dispositivo, identificadores anónimos</td><td>Estadísticas de uso y mejora del servicio</td></tr>
         </tbody>
@@ -487,6 +496,8 @@
           <tr><td>Internet (INTERNET)</td><td>Cargar anuncios, enviar informes de fallos</td></tr>
           <tr><td>Estado de red (ACCESS_NETWORK_STATE)</td><td>Comprobar la conectividad para anuncios</td></tr>
           <tr><td>ID de publicidad (com.google.android.gms.permission.AD_ID)</td><td>Acceder al identificador publicitario (anuncios personalizados)</td></tr>
+          <tr><td>Notificaciones (permiso de notificaciones de iOS / POST_NOTIFICATIONS de Android)</td><td>Recordatorio diario (programado en el dispositivo; nada se envía a nuestros servidores)</td></tr>
+          <tr><td>Seguimiento de la app (ATT de iOS)</td><td>Anuncios personalizados y medición si permite el seguimiento (usa el identificador publicitario)</td></tr>
         </tbody>
       </table>
 
@@ -509,7 +520,8 @@
       <h2>5. Publicidad y Consentimiento (RGPD/UMP)</h2>
       <ul>
         <li>A los usuarios del Espacio Económico Europeo (EEE), el Reino Unido y Suiza se les muestra un formulario de consentimiento de Google UMP (User Messaging Platform) en el primer inicio, donde pueden elegir consentir anuncios personalizados o no personalizados.</li>
-        <li>Para excluirse de los anuncios personalizados, active "Inhabilitar la personalización de anuncios" o restablezca/elimine su ID de publicidad en <strong>Ajustes del dispositivo &gt; Google &gt; Anuncios</strong>.</li>
+        <li>Para excluirse de los anuncios personalizados, active "Inhabilitar la personalización de anuncios" o restablezca/elimine su ID de publicidad en <strong>[Android] Ajustes del dispositivo &gt; Google &gt; Anuncios / [iOS] Ajustes &gt; Privacidad y seguridad &gt; Seguimiento</strong>.</li>
+        <li>En iOS, tras el primer inicio se le pregunta si permite el seguimiento. Si lo permite, el identificador publicitario (IDFA) se usa para anuncios personalizados y medición; si lo rechaza, no se usa para ello. Puede cambiarlo en Ajustes &gt; Privacidad y seguridad &gt; Seguimiento.</li>
       </ul>
 
       <h2>6. Conservación y Eliminación de Datos</h2>
@@ -542,7 +554,7 @@
     <!-- ==================== 简体中文 ==================== -->
     <div id="section-zhhans" class="section-zhhans">
       <h1>隐私政策</h1>
-      <p class="subtitle">Daily Sudoku (天天数独) | 生效日期: 2026年8月12日 | 版本 1.1 (新增 Firebase Analytics)</p>
+      <p class="subtitle">Daily Sudoku (天天数独) | 生效日期: 2026年10月5日 | 版本 1.2 (iOS 版发布，新增通知与追踪权限说明)</p>
 
       <p>RedMoon Studio(以下简称"本公司")运营 Daily Sudoku 移动应用程序。本隐私政策说明您使用本应用时信息的处理方式。</p>
 
@@ -563,10 +575,10 @@
       <table>
         <thead><tr><th>项目</th><th>用途</th><th>存储位置</th></tr></thead>
         <tbody>
-          <tr><td>游戏统计(完成数、时间、连胜)</td><td>显示游戏记录</td><td>SharedPreferences</td></tr>
-          <tr><td>进行中的游戏</td><td>继续游戏</td><td>SharedPreferences</td></tr>
-          <tr><td>提示余额、成就</td><td>游戏进度</td><td>SharedPreferences</td></tr>
-          <tr><td>设置(主题、语言、振动、字体大小)</td><td>应用配置</td><td>SharedPreferences</td></tr>
+          <tr><td>游戏统计(完成数、时间、连胜)</td><td>显示游戏记录</td><td>设备内应用存储</td></tr>
+          <tr><td>进行中的游戏</td><td>继续游戏</td><td>设备内应用存储</td></tr>
+          <tr><td>提示余额、成就</td><td>游戏进度</td><td>设备内应用存储</td></tr>
+          <tr><td>设置(主题、语言、振动、字体大小)</td><td>应用配置</td><td>设备内应用存储</td></tr>
         </tbody>
       </table>
 
@@ -574,7 +586,7 @@
       <table>
         <thead><tr><th>服务</th><th>收集的数据</th><th>目的</th></tr></thead>
         <tbody>
-          <tr><td>Google AdMob</td><td>广告标识符(AAID)、IP地址、设备信息、广告互动数据</td><td>广告投放与衡量</td></tr>
+          <tr><td>Google AdMob</td><td>广告标识符(AAID / IDFA)、IP地址、设备信息、广告互动数据</td><td>广告投放与衡量</td></tr>
           <tr><td>Firebase Crashlytics (Google)</td><td>崩溃日志、堆栈跟踪、设备状态、应用版本、匿名安装标识符</td><td>提升应用稳定性</td></tr>
           <tr><td>Firebase Analytics (Google)</td><td>应用使用事件(页面浏览、游戏进度等)、设备信息、匿名标识符</td><td>使用统计分析与服务改进</td></tr>
         </tbody>
@@ -587,6 +599,8 @@
           <tr><td>互联网 (INTERNET)</td><td>加载广告、发送崩溃报告</td></tr>
           <tr><td>网络状态 (ACCESS_NETWORK_STATE)</td><td>检查广告所需的连接状态</td></tr>
           <tr><td>广告 ID (com.google.android.gms.permission.AD_ID)</td><td>访问广告标识符(个性化广告)</td></tr>
+          <tr><td>通知(iOS 通知权限 / Android POST_NOTIFICATIONS)</td><td>每日提醒通知(在设备上预定，不向服务器发送)</td></tr>
+          <tr><td>应用追踪(iOS ATT)</td><td>允许追踪时用于个性化广告和广告效果衡量(使用广告标识符)</td></tr>
         </tbody>
       </table>
 
@@ -609,7 +623,8 @@
       <h2>第5条 (广告与用户同意 — GDPR/UMP)</h2>
       <ul>
         <li>对于欧洲经济区(EEA)、英国和瑞士的用户，应用首次启动时会显示 Google UMP(User Messaging Platform)同意表单，可选择是否同意个性化/非个性化广告。</li>
-        <li>如不希望接收个性化广告，可在<strong>设备设置 &gt; Google &gt; 广告</strong>中开启"停用广告个性化"，或重置/删除您的广告 ID。</li>
+        <li>如不希望接收个性化广告，可在<strong>[Android] 设备设置 &gt; Google &gt; 广告 / [iOS] 设置 &gt; 隐私与安全性 &gt; 追踪</strong>中开启"停用广告个性化"，或重置/删除您的广告 ID。</li>
+        <li>在 iOS 上，首次启动后会询问是否允许追踪。允许时，广告标识符(IDFA)用于个性化广告和广告效果衡量；拒绝时则不会用于个性化广告。可随时在设置 &gt; 隐私与安全性 &gt; 追踪中更改。</li>
       </ul>
 
       <h2>第6条 (数据保留与删除)</h2>
@@ -642,7 +657,7 @@
     <!-- ==================== 繁體中文 ==================== -->
     <div id="section-zhhant" class="section-zhhant">
       <h1>隱私政策</h1>
-      <p class="subtitle">Daily Sudoku (天天數獨) | 生效日期: 2026年8月12日 | 版本 1.1 (新增 Firebase Analytics)</p>
+      <p class="subtitle">Daily Sudoku (天天數獨) | 生效日期: 2026年10月5日 | 版本 1.2 (iOS 版發布，新增通知與追蹤權限說明)</p>
 
       <p>RedMoon Studio(以下簡稱「本公司」)營運 Daily Sudoku 行動應用程式。本隱私政策說明您使用本應用時資訊的處理方式。</p>
 
@@ -663,10 +678,10 @@
       <table>
         <thead><tr><th>項目</th><th>用途</th><th>儲存位置</th></tr></thead>
         <tbody>
-          <tr><td>遊戲統計(完成數、時間、連勝)</td><td>顯示遊戲記錄</td><td>SharedPreferences</td></tr>
-          <tr><td>進行中的遊戲</td><td>繼續遊戲</td><td>SharedPreferences</td></tr>
-          <tr><td>提示餘額、成就</td><td>遊戲進度</td><td>SharedPreferences</td></tr>
-          <tr><td>設定(主題、語言、震動、字型大小)</td><td>應用設定</td><td>SharedPreferences</td></tr>
+          <tr><td>遊戲統計(完成數、時間、連勝)</td><td>顯示遊戲記錄</td><td>裝置內應用儲存</td></tr>
+          <tr><td>進行中的遊戲</td><td>繼續遊戲</td><td>裝置內應用儲存</td></tr>
+          <tr><td>提示餘額、成就</td><td>遊戲進度</td><td>裝置內應用儲存</td></tr>
+          <tr><td>設定(主題、語言、震動、字型大小)</td><td>應用設定</td><td>裝置內應用儲存</td></tr>
         </tbody>
       </table>
 
@@ -674,7 +689,7 @@
       <table>
         <thead><tr><th>服務</th><th>收集的資料</th><th>目的</th></tr></thead>
         <tbody>
-          <tr><td>Google AdMob</td><td>廣告識別碼(AAID)、IP位址、裝置資訊、廣告互動資料</td><td>廣告投放與衡量</td></tr>
+          <tr><td>Google AdMob</td><td>廣告識別碼(AAID / IDFA)、IP位址、裝置資訊、廣告互動資料</td><td>廣告投放與衡量</td></tr>
           <tr><td>Firebase Crashlytics (Google)</td><td>當機記錄、堆疊追蹤、裝置狀態、應用版本、匿名安裝識別碼</td><td>提升應用穩定性</td></tr>
           <tr><td>Firebase Analytics (Google)</td><td>應用使用事件(頁面瀏覽、遊戲進度等)、裝置資訊、匿名識別碼</td><td>使用統計分析與服務改進</td></tr>
         </tbody>
@@ -687,6 +702,8 @@
           <tr><td>網際網路 (INTERNET)</td><td>載入廣告、傳送當機報告</td></tr>
           <tr><td>網路狀態 (ACCESS_NETWORK_STATE)</td><td>檢查廣告所需的連線狀態</td></tr>
           <tr><td>廣告 ID (com.google.android.gms.permission.AD_ID)</td><td>存取廣告識別碼(個人化廣告)</td></tr>
+          <tr><td>通知(iOS 通知權限 / Android POST_NOTIFICATIONS)</td><td>每日提醒通知(在裝置上排程，不傳送至伺服器)</td></tr>
+          <tr><td>應用程式追蹤(iOS ATT)</td><td>允許追蹤時用於個人化廣告與廣告成效衡量(使用廣告識別碼)</td></tr>
         </tbody>
       </table>
 
@@ -709,7 +726,8 @@
       <h2>第5條 (廣告與使用者同意 — GDPR/UMP)</h2>
       <ul>
         <li>對於歐洲經濟區(EEA)、英國與瑞士的使用者，應用首次啟動時會顯示 Google UMP(User Messaging Platform)同意表單，可選擇是否同意個人化/非個人化廣告。</li>
-        <li>如不希望接收個人化廣告，可在<strong>裝置設定 &gt; Google &gt; 廣告</strong>中開啟「停用廣告個人化」,或重設/刪除您的廣告 ID。</li>
+        <li>如不希望接收個人化廣告，可在<strong>[Android] 裝置設定 &gt; Google &gt; 廣告 / [iOS] 設定 &gt; 隱私權與安全性 &gt; 追蹤</strong>中開啟「停用廣告個人化」,或重設/刪除您的廣告 ID。</li>
+        <li>在 iOS 上，首次啟動後會詢問是否允許追蹤。允許時，廣告識別碼(IDFA)用於個人化廣告與廣告成效衡量；拒絕則不會用於個人化廣告。可隨時在設定 &gt; 隱私權與安全性 &gt; 追蹤中變更。</li>
       </ul>
 
       <h2>第6條 (資料保留與刪除)</h2>
